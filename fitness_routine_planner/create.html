@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Routine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create Your Fitness Routine</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create.html">Create Routine</a></li>
+                <li><a href="myroutines.html">My Routines</a></li>
+                <li><a href="progress.html">Progress Tracker</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Create a New Routine</h2>
+        <div class="input-group">
+            <input type="text" id="routineName" placeholder="Routine Name">
+            <input type="text" id="exercise" placeholder="Exercise Name">
+            <input type="number" id="durationMinutes" placeholder="Minutes">
+            <input type="number" id="durationSeconds" placeholder="Seconds">
+        </div>
+        <button onclick="addOrUpdateExercise()">Save Routine</button>
+
+        <h3>Routine List</h3>
+        <ul id="routineList"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

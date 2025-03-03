@@ -91,7 +91,7 @@ class RoomScheduler {
     }
 }
 
-public class Main {
+public class MeetingRoom {
     public static void main(String[] args) {
         RoomScheduler scheduler = new RoomScheduler();
 

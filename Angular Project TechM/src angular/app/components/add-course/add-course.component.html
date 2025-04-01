@@ -1,0 +1,16 @@
+<div class="add-course">
+    <h2>Add Course</h2>
+    <form (ngSubmit)="addCourse()">
+      <label>Title:</label>
+      <input type="text" [(ngModel)]="newCourse.title" name="title" required />
+  
+      <label>Description:</label>
+      <textarea [(ngModel)]="newCourse.description" name="description" required></textarea>
+  
+      <label>Duration:</label>
+      <input type="text" [(ngModel)]="newCourse.duration" name="duration" required />
+  
+      <button type="submit">Add Course</button>
+    </form>
+  </div>
+  

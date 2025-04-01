@@ -1,0 +1,16 @@
+<div class="update-course">
+    <h2>Update Course</h2>
+    <form (ngSubmit)="updateCourse()">
+      <label>Title:</label>
+      <input type="text" [(ngModel)]="course.title" name="title" required />
+  
+      <label>Description:</label>
+      <textarea [(ngModel)]="course.description" name="description" required></textarea>
+  
+      <label>Duration:</label>
+      <input type="text" [(ngModel)]="course.duration" name="duration" required />
+  
+      <button type="submit">Update Course</button>
+    </form>
+  </div>
+  

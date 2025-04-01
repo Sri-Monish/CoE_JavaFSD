@@ -1,0 +1,12 @@
+<div class="course-list-container">
+  <h2>📋 Available Courses</h2>
+
+  <div class="course-grid">
+    <div class="course-card" *ngFor="let course of courses" (click)="viewCourse(course.id)">
+      <h3>{{ course.title }}</h3>
+      <p>{{ course.description }}</p>
+      <p><strong>Duration:</strong> {{ course.duration }}</p>
+      <button (click)="editCourse(course.id, $event)">✏️ Edit</button>
+    </div>
+  </div>
+</div>

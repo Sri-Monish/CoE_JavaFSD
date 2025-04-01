@@ -1,0 +1,24 @@
+<div class="home-container">
+  <h1>📚 Welcome to Course Management</h1>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <button routerLink="/courses" class="nav-btn">📋 Course List</button>
+    <button routerLink="/add" class="nav-btn">➕ Add Course</button>
+    <button (click)="logout()" class="logout-btn">🚪 Logout</button>
+  </nav>
+
+  <!-- Popular Courses Section -->
+  <div class="popular-courses">
+    <h2>🔥 Popular Courses</h2>
+    <div class="course-grid">
+      <div class="course-card" *ngFor="let course of popularCourses">
+        <h3>{{ course.title }}</h3>
+        <p>{{ course.description }}</p>
+        <p><strong>Duration:</strong> {{ course.duration }}</p>
+      </div>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
